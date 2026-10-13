@@ -1,4 +1,11 @@
-.terraform
+.venv/
+__pycache__/
+data/
+output/
+*.duckdb
+signals*.csv
+.env
+deploy_key*
+*.tfstate*
 .terraform/
-.terraform.*
-terraform.tfvars
+*.tfvars
