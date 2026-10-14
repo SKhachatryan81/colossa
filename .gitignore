@@ -1,11 +1,35 @@
+# Python
 .venv/
+venv/
 __pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+
+# Project data and outputs (never publish scraped text)
 data/
 output/
-*.duckdb
+*.duckdb*
 signals*.csv
+*.log
+
+# Secrets
 .env
+.env.*
+!.env.example
 deploy_key*
+id_ed25519*
+id_rsa*
+*.pem
+*.key
+
+# Terraform
 *.tfstate*
 .terraform/
 *.tfvars
+*.tfvars.json
+
+# Editors / OS
+.DS_Store
+.idea/
+.vscode/
